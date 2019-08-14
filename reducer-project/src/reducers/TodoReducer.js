@@ -1,7 +1,7 @@
 
 export const initialState = {
     todos: [{
-        item: "Test", 
+        item: "It's Working", 
         id: 1,
         completed: false 
     }]

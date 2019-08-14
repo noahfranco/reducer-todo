@@ -6,7 +6,7 @@ import { initialState, todoReducer } from "./reducers/TodoReducer.js";
 
 function App() {
 
-  const [stateTodo, setStateTodo] = useState();
+  const [stateTodo, setStateTodo] = useState(" ");
   // // Dont really understand this (get help to understnad)
   const [state, dispatch] = useReducer(todoReducer, initialState); 
   // // Dont really understand this (get help to understnad)

@@ -1,11 +1,11 @@
 import React from "react"; 
 
 
-const Todo = ({handleChange, stateTodo, handleSubmit}) => {
+const TodoForm = ({ handleSubmit, stateTodo,  handleChange }) => {
 
      return(
          <>
-         <form>
+         <form onSubmit={handleSubmit} >
             <input 
             type="text"
             name="stateTodo"
@@ -13,10 +13,10 @@ const Todo = ({handleChange, stateTodo, handleSubmit}) => {
             onChange={handleChange}
             value={stateTodo} 
             />      
-            <button type="submit"> Add To List </button>
+            <button> Add To List </button>
          </form> 
          </> 
      )
 }
 
-export default Todo; 
+export default TodoForm; 
