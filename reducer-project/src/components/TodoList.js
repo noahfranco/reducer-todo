@@ -10,8 +10,8 @@ const TodoList = ({todos, toggle, clearCompleted}) => {
           </div>
        }) */}
        </>
-
-
     )
 }
+
+export default TodoList; 
 

@@ -7,6 +7,7 @@ export const initialState = {
     }]
 }
 
+// Dont really understand this (get help to understand)
 export const todoReducer = (state, action) => {
     switch (action.type) {
         case "ADD_TODO":
@@ -31,3 +32,4 @@ export const todoReducer = (state, action) => {
                 default: return state; 
     }
 }
+// Dont really understand this (get help to understnad)
