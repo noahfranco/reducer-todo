@@ -1,3 +1,6 @@
+import React, { useState } from "react"; 
+
+
 const TodoForm = props => {
     const [input, setInput] = useState({
         item: "",
@@ -9,7 +12,7 @@ const TodoForm = props => {
         setInput({
             ...input,
             item: event.target.value,
-            id: DataCue.now()
+            id: Date.now()
         });
     };
 
@@ -28,7 +31,7 @@ const TodoForm = props => {
     return (
         <div>
             <for>
-                <input value={input.item} onChange={handleInput} type="text" />
+                <input value={input.item} onChange={handleInput} type="text" onSubmit={addTodo} />
                 <button> Add </button>     
             </for> 
          </div> 
