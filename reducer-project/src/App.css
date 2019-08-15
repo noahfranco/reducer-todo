@@ -23,6 +23,11 @@
   color: #61dafb;
 }
 
+.done {
+  background-color: #2A3D45;
+  text-decoration: line-through;
+}
+
 .clear-btn {
   margin-top: 16px;
 }
