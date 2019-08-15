@@ -19,7 +19,7 @@ const TodoForm = props => {
     console.log("form input", input); 
 
     const addTodo = event => {
-        event.preventDefault(); 
+        event.preventDefault();
         props.addTodo(input); 
         setInput({
             item: "", 
@@ -30,10 +30,10 @@ const TodoForm = props => {
     
     return (
         <div>
-            <for>
+            <form>
                 <input value={input.item} onChange={handleInput} type="text" onSubmit={addTodo} />
                 <button> Add </button>     
-            </for> 
+            </form> 
          </div> 
         );
     };

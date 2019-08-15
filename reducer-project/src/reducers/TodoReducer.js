@@ -13,6 +13,7 @@ export const initialState = {
       console.log("action", action); 
       switch (action.type) {
           case "ADD_TODO":
+          console.log("add item invoked")
           return {
               ...state,
               todos: [...state.todos, action.payload]
